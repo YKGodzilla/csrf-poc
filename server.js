@@ -19,13 +19,13 @@ function pageLayout(title, content) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${title} | Demo Bank</title>
+  <title>${title} | Beta Banker</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="site-shell">
     <header>
-      <div class="brand">Demo Bank</div>
+      <div class="brand">Beta Banker</div>
       <nav>
         <a href="/">Home</a>
         <a href="/accounts">Accounts</a>
@@ -46,7 +46,7 @@ function pageLayout(title, content) {
 
 app.get('/', (req, res) => {
   const content = `
-    <p>Welcome to the Demo Bank website. Explore the pages and test the vulnerable profile email change form.</p>
+    <p>Welcome to the Beta Banker website. Explore the pages and test the vulnerable profile email change form.</p>
     <p>This demo intentionally does not protect the profile email update route against CSRF attacks.</p>
     <div class="card-row">
       <div class="card">
